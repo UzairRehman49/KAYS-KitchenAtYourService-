@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/linlayout"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to KAYS"
+            android:layout_marginTop="10dp"
+            android:textColor="#0A0A0A"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Login to KAYS"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textSize="20sp">-->
+
+<!--        </TextView>-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:layout_marginTop="80dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0A0A0A">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edttxt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="email@example.com">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:layout_marginTop="40dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#0A0A0A">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/edttxtPass"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="***************">
+
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Remember me"
+            tools:layout_editor_absoluteX="51dp"
+            tools:layout_editor_absoluteY="474dp" />
+
+
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/tripplan_radiogroup"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Login as: "
+                android:textColor="#0A0A0A"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio_chef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Chef"
+                android:textSize="14sp"
+                android:checked="true"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:background="@drawable/botton_color"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintHorizontal_bias="0.498"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="130dp"
+        android:paddingRight="130dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linlayout"
+        app:layout_constraintVertical_bias="0.794"
+
+        >
+
+
+    </Button>
+
+
+    <TextView
+
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_login">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toRightOf="@id/txt1"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:textColor="#3F51B5"
+        app:layout_constraintTop_toBottomOf="@id/btn_login">
+
+    </TextView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

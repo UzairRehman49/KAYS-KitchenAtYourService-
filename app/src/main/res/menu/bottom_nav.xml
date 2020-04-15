@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id ="@+id/shifts"
+        android:title="Shifts"
+        android:icon="@drawable/ic_list_black_24dp"
+        />
+
+    <item
+        android:id ="@+id/addshift"
+        android:title="Add Shift"
+        android:icon="@drawable/ic_playlist_add_black_24dp"
+        />
+
+
+
+    <item
+        android:id ="@+id/orders"
+        android:title="Orders"
+        android:icon="@drawable/ic_restaurant_menu_black_24dp"
+        />
+
+
+
+
+
+</menu>

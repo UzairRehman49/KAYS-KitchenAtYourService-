@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <TextView
+        android:id="@+id/hiUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Welcome Ali"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Please Select A KAYS Kitchen"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hiUser" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="399dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:foregroundTint="#2196F3"
+        android:queryHint="search  for a city like Lahore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+
+        android:id="@+id/btn_Lahore"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/botton_color"
+        android:paddingLeft="130dp"
+        android:paddingRight="130dp"
+        android:text="KAYS Lahore"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/Karachi"
+        android:layout_width="336dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/botton_color"
+        android:paddingLeft="130dp"
+        android:paddingRight="130dp"
+        android:text="KAYS Islamabad"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Islamabad" />
+
+    <Button
+        android:id="@+id/Islamabad"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/botton_color"
+        android:paddingLeft="130dp"
+        android:paddingRight="130dp"
+        android:text="KAYS Karachi"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Lahore" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

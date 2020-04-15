@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">KAYS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="cities">
+
+        <item>KAYS Lahore</item>
+        <item>KAYS Karachi</item>
+        <item>KAYS Islamabad</item>
+        <item>KAYS Multan</item>
+
+
+    </string-array>
+
+</resources>
